@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/keyword_list"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/insert_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/insert_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/add" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/keyword_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/matching_text"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/parse_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/matching_text_hint" />
+
+            <Button
+                android:id="@+id/parse_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/matching" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/config"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/config_case_insensitive_checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/config_case_insensitive" />
+
+            <CheckBox
+                android:id="@+id/config_remove_overlaps_checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/config_remove_overlaps" />
+
+            <CheckBox
+                android:id="@+id/config_only_whole_words_checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/config_only_whole_words" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/result"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
