@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:background="@color/colorAccent"
         android:orientation="vertical">
 
@@ -26,7 +26,8 @@
                 android:id="@+id/insert_editText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:hint="@string/insert_text_hint" />
 
             <Button
                 android:id="@+id/insert_button"
@@ -94,18 +95,21 @@
                 android:id="@+id/config_case_insensitive_checkBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="@string/config_case_insensitive" />
 
             <CheckBox
                 android:id="@+id/config_remove_overlaps_checkBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="@string/config_remove_overlaps" />
 
             <CheckBox
                 android:id="@+id/config_only_whole_words_checkBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="@string/config_only_whole_words" />
         </LinearLayout>
 

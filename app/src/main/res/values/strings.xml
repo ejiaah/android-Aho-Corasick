@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Aho-Corasick</string>
 
+    <string name="insert_text_hint">Enter Keyword</string>
     <string name="matching">Matching</string>
     <string name="matching_text_hint">Enter Search Text</string>
     <string name="matching_text">Matching Text</string>
